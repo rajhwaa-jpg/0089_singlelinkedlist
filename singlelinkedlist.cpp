@@ -53,8 +53,13 @@ return;
     }
     previous = current;
     current = current->next;
+        }
+
+    nodeBaru->next = current;
+    previous->next = nodeBaru;
     }
 
-nodeBaru->next = current;
-previous->next = nodeBaru;
-}
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
